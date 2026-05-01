@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugestões de Presente - Nicole</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&バランス=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #fdfaf6;
@@ -61,13 +61,13 @@
             align-items: center;
             gap: 15px;
             color: var(--accent);
+            margin-top: 50px;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 25px;
-            margin-bottom: 60px;
         }
 
         .card {
@@ -77,6 +77,8 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
             border: 1px solid #f0f0f0;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -86,165 +88,269 @@
         .card h3 {
             margin-top: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #444;
+            margin-bottom: 10px;
         }
 
         .card p {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #666;
-            margin-bottom: 5px;
+            margin: 2px 0;
         }
 
         .tag {
             display: inline-block;
             padding: 4px 10px;
             border-radius: 20px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             text-transform: uppercase;
-            margin-top: 10px;
+            margin-top: auto;
+            align-self: flex-start;
         }
 
         .tag-perfume { background: var(--lavender); color: #5e35b1; }
         .tag-body { background: var(--rose); color: #c2185b; }
         .tag-care { background: var(--botanic); color: #2e7d32; }
 
+        .book-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
         .book-list {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .book-list li {
-            padding: 10px 0;
+            padding: 8px 0;
             border-bottom: 1px solid #eee;
-            font-style: italic;
+            font-size: 0.9rem;
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
             font-family: 'Playfair Display', serif;
-            background: #fff;
-            border-top: 1px solid var(--lavender);
             color: #888;
+            margin-top: 40px;
+            border-top: 1px solid var(--lavender);
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            .book-grid { grid-template-columns: 1fr; }
             h1 { font-size: 2rem; }
-            .grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Sugestões de Presente [cite: 1]</h1>
-    <p class="subtitle">Para Nicole [cite: 2]</p>
+    <h1>Sugestões de Presente</h1>
+    <p class="subtitle">Para Nicole</p>
 </header>
 
 <div class="container">
 
-    <h2 class="section-title">✨ Perfumes [cite: 5]</h2>
+    <h2 class="section-title">✨ Perfumes</h2>
     <div class="grid">
         <div class="card">
-            <h3>Granado Íris [cite: 3, 8]</h3>
-            <p>Eau de Toilette - 100ml [cite: 6, 19]</p>
-            <span class="tag tag-perfume">Clássico</span>
+            <h3>Granado - Íris</h3>
+            <p>Eau de Toilette (100ml)</p>
+            <span class="tag tag-perfume">Granado</span>
         </div>
         <div class="card">
-            <h3>Eudora Instance [cite: 135]</h3>
-            <p>Fragrâncias Harmonia e Mudança [cite: 9]</p>
-            <span class="tag tag-perfume">Floral</span>
+            <h3>Eudora Instance</h3>
+            <p>Fragrâncias: Harmonia e Mudança</p>
+            <span class="tag tag-perfume">Eudora</span>
         </div>
     </div>
 
-    <h2 class="section-title">🌸 Body Splashes [cite: 16, 21]</h2>
+    <h2 class="section-title">🌸 Body Splashes (200ml)</h2>
     <div class="grid">
         <div class="card">
-            <h3>Natura Tododia [cite: 14, 15]</h3>
-            <p>Algodão, Noz Pecã e Cacau, Chá de Camomila e Lavanda [cite: 29, 40, 56, 57]</p>
-            <p>Volume: 200ml [cite: 19, 35]</p>
-            <span class="tag tag-body">Suave & Confortável</span>
+            <h3>Natura Tododia - Algodão</h3>
+            <p>Suave e confortável com notas florais</p>
+            <span class="tag tag-body">Natura</span>
         </div>
         <div class="card">
-            <h3>Eudora Instance [cite: 44, 45]</h3>
-            <p>Ameixa e Praliné / Algodão e Jasmim [cite: 46, 49]</p>
-            <p>Spray Perfumado Desodorante [cite: 50]</p>
-            <span class="tag tag-body">Marcante</span>
+            <h3>Natura Tododia - Noz Pecã e Cacau</h3>
+            <p>Cremosa e envolvente com notas florais</p>
+            <span class="tag tag-body">Natura</span>
+        </div>
+        <div class="card">
+            <h3>Natura Tododia - Chá de Camomila e Lavanda</h3>
+            <p>Linha Todanoite (Edição Limitada)</p>
+            <span class="tag tag-body">Natura</span>
+        </div>
+        <div class="card">
+            <h3>Natura Ekos - Madeira em Flor</h3>
+            <span class="tag tag-body">Natura</span>
+        </div>
+        <div class="card">
+            <h3>Eudora Instance - Lavanda</h3>
+            <p>Spray Perfumado Desodorante</p>
+            <span class="tag tag-body">Eudora</span>
+        </div>
+        <div class="card">
+            <h3>Eudora Instance - Algodão e Jasmim</h3>
+            <span class="tag tag-body">Eudora</span>
+        </div>
+        <div class="card">
+            <h3>Eudora Instance - Ameixa e Praliné</h3>
+            <span class="tag tag-body">Eudora</span>
         </div>
     </div>
 
-    <h2 class="section-title">🕯️ Velas [cite: 68]</h2>
+    <h2 class="section-title">🕯️ Velas Perfumadas</h2>
     <div class="grid">
         <div class="card">
-            <h3>Granado Pharmácias [cite: 61, 75, 76]</h3>
-            <p>Cera Vegetal: Verbena, Lavanda e Chá Branco [cite: 63, 64, 65, 77]</p>
-            <p>Peso: 180g - 250g [cite: 60, 74]</p>
-            <span class="tag tag-care">Aromaterapia</span>
+            <h3>Granado - Verbena</h3>
+            <p>Vela de cera vegetal (250g)</p>
+            <span class="tag tag-care">Granado</span>
         </div>
         <div class="card">
-            <h3>Océane Scented Candle [cite: 69, 73, 79]</h3>
-            <p>Bergamot & Amber Wood [cite: 79]</p>
-            <span class="tag tag-care">Premium</span>
+            <h3>Granado - Lavanda</h3>
+            <p>Linha Terrapeutics (180g)</p>
+            <span class="tag tag-care">Granado</span>
+        </div>
+        <div class="card">
+            <h3>Granado - Chá Branco</h3>
+            <p>Linha Terrapeutics (180g)</p>
+            <span class="tag tag-care">Granado</span>
+        </div>
+        <div class="card">
+            <h3>Océane - Bergamot & Amber Wood</h3>
+            <p>Scented Candle</p>
+            <span class="tag tag-care">Océane</span>
         </div>
     </div>
 
-    <h2 class="section-title">🌿 Cuidados e Hidratação [cite: 104]</h2>
+    <h2 class="section-title">🌿 Hidratantes e Cuidados</h2>
     <div class="grid">
         <div class="card">
-            <h3>CeraVe / Cetaphil [cite: 95, 107]</h3>
-            <p>Creme Hidratante para pele seca e sensível [cite: 97, 98, 110]</p>
-            <span class="tag tag-care">Dermatológico</span>
+            <h3>CeraVe - Creme Hidratante</h3>
+            <p>Pele Seca a Extra Seca (com Ácido Hialurônico)</p>
+            <span class="tag tag-care">Cuidados</span>
         </div>
         <div class="card">
-            <h3>Natura Ekos Castanha [cite: 86, 90, 116]</h3>
-            <p>Creme para as mãos e Sabonete Líquido [cite: 87, 117]</p>
-            <span class="tag tag-care">Biodiversidade</span>
+            <h3>Cetaphil - Creme Hidratante</h3>
+            <p>Pele Extremamente Seca e Sensível</p>
+            <span class="tag tag-care">Cuidados</span>
+        </div>
+        <div class="card">
+            <h3>Natura Ekos - Castanha (Mãos)</h3>
+            <p>Creme para as mãos (40g / 75g)</p>
+            <span class="tag tag-care">Natura</span>
+        </div>
+        <div class="card">
+            <h3>Natura Ekos - Castanha (Banho)</h3>
+            <p>Sabonete Líquido para as mãos (250ml)</p>
+            <span class="tag tag-care">Natura</span>
+        </div>
+        <div class="card">
+            <h3>Natura Ekos - Andiroba</h3>
+            <p>Polpa para o corpo (400ml)</p>
+            <span class="tag tag-care">Natura</span>
         </div>
     </div>
 
-    <h2 class="section-title">💇‍♀️ Cabelo [cite: 144]</h2>
+    <h2 class="section-title">💇‍♀️ Cabelo (Linha Juba)</h2>
     <div class="grid">
         <div class="card">
-            <h3>Widi Care Juba [cite: 145, 146]</h3>
-            <p>Máscara Reconstrutora e Hidro-Nutritiva [cite: 147, 148, 153, 154]</p>
-            <span class="tag tag-care">Tratamento</span>
+            <h3>Juba - Blend de Óleos Vegetais</h3>
+            <p>Com óleo de algodão (60ml)</p>
+            <span class="tag tag-care">Widi Care</span>
         </div>
         <div class="card">
-            <h3>Finalizadores Juba [cite: 128]</h3>
-            <p>Mousse Criador de Cachos e Modelador de Ondas [cite: 138, 162, 169]</p>
-            <span class="tag tag-care">Estilização</span>
+            <h3>Juba - Máscara Reconstrutora</h3>
+            <p>Com óleo de girassol (500g)</p>
+            <span class="tag tag-care">Widi Care</span>
+        </div>
+        <div class="card">
+            <h3>Juba - Máscara Hidro-Nutritiva</h3>
+            <p>Tratamento intensivo (500g)</p>
+            <span class="tag tag-care">Widi Care</span>
+        </div>
+        <div class="card">
+            <h3>Juba - Butter Oil</h3>
+            <p>Nutrição intensiva</p>
+            <span class="tag tag-care">Widi Care</span>
+        </div>
+        <div class="card">
+            <h3>Juba - Mousse Criador de Cachos</h3>
+            <p>Super definição por 48 horas</p>
+            <span class="tag tag-care">Widi Care</span>
+        </div>
+        <div class="card">
+            <h3>Juba - Modelador de Ondas</h3>
+            <p>Creme de pentear (Curvaturas 2A, 2B, 2C)</p>
+            <span class="tag tag-care">Widi Care</span>
+        </div>
+        <div class="card">
+            <h3>Juba - Modelador de Cachos</h3>
+            <p>Creme de pentear (Curvaturas 3A, 3B, 3C)</p>
+            <span class="tag tag-care">Widi Care</span>
         </div>
     </div>
 
-    <h2 class="section-title">📚 Biblioteca [cite: 182]</h2>
-    <div class="card" style="width: 100%; box-sizing: border-box;">
-        <ul class="book-list">
-            <li>A Paixão Segundo G.H. - Clarice Lispector [cite: 178, 180, 183]</li>
-            <li>A Amiga Genial (Série) - Elena Ferrante [cite: 185, 186, 187, 241, 243]</li>
-            <li>A Redoma de Vidro - Sylvia Plath [cite: 175, 176, 179]</li>
-            <li>Conversas Entre Amigos - Sally Rooney [cite: 190, 191, 193]</li>
-            <li>Cem Anos de Solidão - Gabriel García Márquez [cite: 234, 235]</li>
-        </ul>
-    </div>
-
-    <h2 class="section-title">💄 Outros [cite: 265]</h2>
-    <div class="grid">
+    <h2 class="section-title">📚 Biblioteca</h2>
+    <div class="book-grid">
         <div class="card">
-            <h3>Hada Labo [cite: 253, 255]</h3>
-            <p>Cleansing Oil (Azeite de Oliva e Jojoba) [cite: 249, 250, 251, 252]</p>
+            <ul class="book-list">
+                <li><strong>Clarice Lispector</strong> - A Paixão Segundo G.H.</li>
+                <li><strong>Elena Ferrante</strong> - A Amiga Genial (Série Completa)</li>
+                <li><strong>Elena Ferrante</strong> - História do Novo Sobrenome</li>
+                <li><strong>Elena Ferrante</strong> - História de Quem Foge e de Quem Fica</li>
+                <li><strong>Elena Ferrante</strong> - História da Menina Perdida</li>
+                <li><strong>Sylvia Plath</strong> - A Redoma de Vidro</li>
+                <li><strong>Sally Rooney</strong> - Conversas Entre Amigos</li>
+            </ul>
         </div>
         <div class="card">
-            <h3>Vizzela / Océane [cite: 260, 270, 273]</h3>
-            <p>Blindagem Fix e Paletas de Maquiagem [cite: 272, 274]</p>
+            <ul class="book-list">
+                <li><strong>Gabriel García Márquez</strong> - Cem Anos de Solidão</li>
+                <li><strong>Lygia Fagundes Telles</strong> - As Meninas</li>
+                <li><strong>Aline Bei</strong> - O Peso do Pássaro Morto</li>
+                <li><strong>Eliana Alves Cruz</strong> - Solitária</li>
+                <li><strong>Wonpyung Sohn</strong> - Amêndoas / O Impulso</li>
+                <li><strong>Rita Lee</strong> - Uma Autobiografia</li>
+                <li><strong>Ishida Syou</strong> - Vou te Receitar um Gato</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">💄 Outros e Maquiagem</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Hada Labo - Cleansing Oil</h3>
+            <p>Com Ácido Hialurônico, Oliva e Jojoba</p>
+        </div>
+        <div class="card">
+            <h3>Océane - Paletas de Sombras</h3>
+            <p>Opções variadas de cores</p>
+        </div>
+        <div class="card">
+            <h3>Vizzela - Real Fix</h3>
+            <p>Fixador de maquiagem (150ml)</p>
+        </div>
+        <div class="card">
+            <h3>Vizzela - Gotas Fix</h3>
+            <p>Blindagem, diluidor e primer (30ml)</p>
+        </div>
+        <div class="card">
+            <h3>Eudora Soul - Kiss Me Gloss</h3>
         </div>
     </div>
 
 </div>
 
 <footer>
-    <p>[cite: 277] É isso. Se sinta à vontade para dar o que preferir e for possível. [cite: 278]</p>
+    <p>É isso. Se sinta à vontade para dar o que preferir e for possível. ✨</p>
 </footer>
 
 </body>
