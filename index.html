@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões de Presente - Nicole</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&バランス=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfaf6;
+            --lavender: #e6e6fa;
+            --rose: #fce4ec;
+            --botanic: #e8f5e9;
+            --text-main: #333;
+            --accent: #9575cd;
+            --card-bg: #ffffff;
+        }
 
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--rose) 0%, var(--lavender) 100%);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            color: #5d4037;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--lavender);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .tag-perfume { background: var(--lavender); color: #5e35b1; }
+        .tag-body { background: var(--rose); color: #c2185b; }
+        .tag-care { background: var(--botanic); color: #2e7d32; }
+
+        .book-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .book-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-family: 'Playfair Display', serif;
+            background: #fff;
+            border-top: 1px solid var(--lavender);
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sugestões de Presente [cite: 1]</h1>
+    <p class="subtitle">Para Nicole [cite: 2]</p>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">✨ Perfumes [cite: 5]</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Granado Íris [cite: 3, 8]</h3>
+            <p>Eau de Toilette - 100ml [cite: 6, 19]</p>
+            <span class="tag tag-perfume">Clássico</span>
+        </div>
+        <div class="card">
+            <h3>Eudora Instance [cite: 135]</h3>
+            <p>Fragrâncias Harmonia e Mudança [cite: 9]</p>
+            <span class="tag tag-perfume">Floral</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">🌸 Body Splashes [cite: 16, 21]</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Natura Tododia [cite: 14, 15]</h3>
+            <p>Algodão, Noz Pecã e Cacau, Chá de Camomila e Lavanda [cite: 29, 40, 56, 57]</p>
+            <p>Volume: 200ml [cite: 19, 35]</p>
+            <span class="tag tag-body">Suave & Confortável</span>
+        </div>
+        <div class="card">
+            <h3>Eudora Instance [cite: 44, 45]</h3>
+            <p>Ameixa e Praliné / Algodão e Jasmim [cite: 46, 49]</p>
+            <p>Spray Perfumado Desodorante [cite: 50]</p>
+            <span class="tag tag-body">Marcante</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">🕯️ Velas [cite: 68]</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Granado Pharmácias [cite: 61, 75, 76]</h3>
+            <p>Cera Vegetal: Verbena, Lavanda e Chá Branco [cite: 63, 64, 65, 77]</p>
+            <p>Peso: 180g - 250g [cite: 60, 74]</p>
+            <span class="tag tag-care">Aromaterapia</span>
+        </div>
+        <div class="card">
+            <h3>Océane Scented Candle [cite: 69, 73, 79]</h3>
+            <p>Bergamot & Amber Wood [cite: 79]</p>
+            <span class="tag tag-care">Premium</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">🌿 Cuidados e Hidratação [cite: 104]</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>CeraVe / Cetaphil [cite: 95, 107]</h3>
+            <p>Creme Hidratante para pele seca e sensível [cite: 97, 98, 110]</p>
+            <span class="tag tag-care">Dermatológico</span>
+        </div>
+        <div class="card">
+            <h3>Natura Ekos Castanha [cite: 86, 90, 116]</h3>
+            <p>Creme para as mãos e Sabonete Líquido [cite: 87, 117]</p>
+            <span class="tag tag-care">Biodiversidade</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">💇‍♀️ Cabelo [cite: 144]</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Widi Care Juba [cite: 145, 146]</h3>
+            <p>Máscara Reconstrutora e Hidro-Nutritiva [cite: 147, 148, 153, 154]</p>
+            <span class="tag tag-care">Tratamento</span>
+        </div>
+        <div class="card">
+            <h3>Finalizadores Juba [cite: 128]</h3>
+            <p>Mousse Criador de Cachos e Modelador de Ondas [cite: 138, 162, 169]</p>
+            <span class="tag tag-care">Estilização</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">📚 Biblioteca [cite: 182]</h2>
+    <div class="card" style="width: 100%; box-sizing: border-box;">
+        <ul class="book-list">
+            <li>A Paixão Segundo G.H. - Clarice Lispector [cite: 178, 180, 183]</li>
+            <li>A Amiga Genial (Série) - Elena Ferrante [cite: 185, 186, 187, 241, 243]</li>
+            <li>A Redoma de Vidro - Sylvia Plath [cite: 175, 176, 179]</li>
+            <li>Conversas Entre Amigos - Sally Rooney [cite: 190, 191, 193]</li>
+            <li>Cem Anos de Solidão - Gabriel García Márquez [cite: 234, 235]</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">💄 Outros [cite: 265]</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Hada Labo [cite: 253, 255]</h3>
+            <p>Cleansing Oil (Azeite de Oliva e Jojoba) [cite: 249, 250, 251, 252]</p>
+        </div>
+        <div class="card">
+            <h3>Vizzela / Océane [cite: 260, 270, 273]</h3>
+            <p>Blindagem Fix e Paletas de Maquiagem [cite: 272, 274]</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>[cite: 277] É isso. Se sinta à vontade para dar o que preferir e for possível. [cite: 278]</p>
+</footer>
+
+</body>
+</html>
